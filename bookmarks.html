@@ -3,29 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>==BOOKMARKS</title>
+    <title>Bookmarks</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="header"></div>
-    <nav class="topbar">
-        <div id="topnavbar">
-	        <a class="navbutton" href="index.html">\\HOME</a>
-	        <a class="navbutton" href="shelves/blog/blog.html">++BLOG</a>
-            <a class="navbutton" href="bookmarks.html">==BOOKMARKS</a>
+    <div class="topbar">
+      <nav class="topnav" id="mainTopNav">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Shelves
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/shelves/blog/blog.html">Blog</a>
+            <a href="">Link2</a>
+          </div>
         </div>
-    </nav>
-
-    <div class="bookmarks-container">
+        <a class="active" href="/bookmarks.html">Bookmarks</a>
+        <a href="javascript:void(0);" class="mobile-icon" onclick="topNavMobile()">&#9776;</a>
+      </nav>
+    </div>
+    <div class="grid-container">
         <main id="bookmarks-main">
             <article>
-                <h2 class="article-title">Recommendations, Links, Credits, and more</h2>
-                <p>Here I will paste links to sites and tools I use as well as credits for whatever I borrow from others.</p><br>
-                <h3 class="article-title">Credits</h3>
+              <h3 class="article-title">Useful sites</h3>
+              <ul>
+                <li><p><a href="https://ellipsus.com/">Ellipsus</a> - an amazing in-browser Docs/Word replacement, also fully anti-AI. I use this for writing and they have drafts, an outline to jump to different chapters or sections, it's incredible.</p></li>
+              </ul>
+            </article>
+            <article>
+              <h3 class="article-title">Programs</h3>
+              <p>Apps that I get a lot of use out of.</p>
+              <ul>
+                <li><p>Firefox - Made the switch away from Chromium a little while back and definitely don't regret it. Although right after I switched they updated their privacy policy to remove the parts about not selling data, and then started going all in on the AI craze as well.. but for now I'm still sticking to it.</p></li>
+                <li></li>
+              </ul>
+              <h3 class="article-title">Firefox Extensions</h3>
+              <p>A list of extensions I use.</p>
+              <ul>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a> - Of course</p></li>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-for-firefox/">Adblock</a></p></li>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/">Privacy Badger</a></p></li>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/clearurls/">ClearURLs</a></p></li>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-shorts/">Hide Shorts</a> - Clears out all of the spam of shorts that I have to sift through to find actual videos to watch</p></li>
+                <li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/renewed-tab/">Renewed Tab</a> - I like the customization and how it looks</p></li>
+              </ul>
+            </article>
+            <article>
+              <h3 class="article-title">Fun</h3>
+              <p>Other sites I enjoy.</p>
+              <ul>
+                <li></li>
+              </ul>
+              <h3 class="article-title">Neocities buttons</h3>
+              <p>Sites that I admire or inspired me, or that I borrowed things from.</p>
+            </article>
+            <article>
+              <h3 class="article-title">Articles</h3>
+              <p></p>
+              <ul>
+                <li></li>
+              </ul>
+            </article>
+            <article>
+              <h3 class="article-title">Youtube</h3>
+              <p></p>
+              <ul>
+                <li></li>
+              </ul>
             </article>
         </main>
     </div>
 
     <footer id="footer">Site by <a href="https://neocities.org/site/kidawin">Kidawin</a> / 2025-2026</footer>
+    <script src="/scripting.js"></script>
   </body>
 </html>

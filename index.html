@@ -3,31 +3,50 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>\\HOME</title>
+    <title>Homepage</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="header"></div>
-    <nav class="topbar">
-        <div id="topnavbar">
-	        <a class="navbutton" href="index.html">\\HOME</a>
-	        <a class="navbutton" href="shelves/blog/blog.html">++BLOG</a>
-            <a class="navbutton" href="bookmarks.html">==BOOKMARKS</a>
+    <div class="topbar">
+      <nav class="topnav" id="mainTopNav">
+        <a class="active" href="/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Shelves
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/shelves/blog/blog.html">Blog</a>
+            <a href="">Link2</a>
+          </div>
         </div>
-    </nav>
+        <a href="/bookmarks.html">Bookmarks</a>
+        <a href="javascript:void(0);" class="mobile-icon" onclick="topNavMobile()">&#9776;</a>
+      </nav>
+    </div>
 
     <div class="grid-container">
-        <main id="content">
+        <main class="content">
             <article id="intro">
-                <h1 class="article-title">Welcome to my home page!</h1>
+                <h2 class="article-title">Welcome~!</h2>
                     <p>I'm Kidawin, and this site is <i>Very</i> under construction. I'm learning so it'll take quite a while, and I might pause working on it at times.</p>
                     <p>Also this will not be mobile friendly for a long while, but I will get to it eventually.</p>
                     <p>I'm making this site to keep track of my hobbies and things that I enjoy.</p>
 
                 <div id="site-updates">
-                    <h2 class="article-title">Site Updates</h2>
-                <div class="scrollable">
+                    <h3 class="article-title">Site Updates</h3>
+                  <div class="scrollable">
                     <ul>
+                        
+                        <li><b>07-09-26</b>
+                            <p>Added dropdown for navbar items.</p>
+                            <p>Cleaned up the mobile functionality a bit I think..</p>
+                        </li>
+                        <li><b>05-12-26</b>
+                            <p>Fixed blog to use the main stylesheet and theme.</p>
+                            <p>Added slight mobile functionality.</p>
+                        </li>
                         <li><b>04-14-26</b>
                             <p>Remade the homepage, going to incorporate the blog page into the same stylesheet.</p>
                             <p>Redoing the design of the blog, mostly the name of it.</p>
@@ -74,24 +93,33 @@
                             <p>Learning HTML and CSS, maybe some JS</p>
                         </li>
                     </ul>
-                </div>
+                  </div>
                 </div>
             </article>
-            <article id="index-buttons">
-                
+            <article id="index-badges-article">
+              <div class="badges-grid">
+                <a href="https://notbyai.fyi/"><img class="badge" src="images/badges/created-by-human.png" alt="Badge that says 'Created by a human, not by AI'."></a>
+                <a href="https://cyber.dabamos.de/88x31/index2.html"><img class="badge" src="images/badges/firefox.png" alt="Badge for with Firefox and a picture of the logo."></a>
+              </div>
             </article>
         </main>
         <div class="right-column">
             <article id="status">
                 <h4 class="article-title">Status</h4>
-                <p><b>Playing: </b>RE9, Mama's Sleeping Angels, HSR</p>
-                <p><b>Reading: </b>The Book of Witching, Kagurabachi, Ichi the Witch, The Ember Knight</p>
-                <p><b>Listening: </b>Evangelic Girl is a Gun by yeule</p>
+                <p><b>Playing: </b>EU4, Destiny 2, Marathon</p>
+                <p><b>Reading: </b>The Wishing Game by Meg Shaffer, The Ember Knight</p>
+                <p><b>Listening: </b>Welcome to My Blue Sky by Momma</p>
             </article>
-
+            <article id="socials">
+              <h4 class="article-title">Trackers</h4>
+              <p><a href="https://www.last.fm/user/Kidawin">Lastfm</a></p>
+              <p><a href="https://anilist.co/user/Kidawin/">Anilist</a></p>
+              <p><a href="https://letterboxd.com/Kidawin/">Letterboxd</a></p>
+            </article>
         </div>
     </div>
 
     <footer id="footer">Site by <a href="https://neocities.org/site/kidawin">Kidawin</a> / 2025-2026</footer>
+    <script src="/scripting.js"></script>
   </body>
 </html>
