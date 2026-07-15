@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
     --header-image: url('/images/banners/starbanner.png');
     --body-bg-image: url('/images/backgrounds/pattern112.jpg');
@@ -389,7 +388,6 @@ footer a:hover {
   .header {
   height: 100px;
   }
-=======
 :root {
     --header-image: url('/images/banners/starbanner.png');
     --body-bg-image: url('/images/backgrounds/pattern112.jpg');
@@ -722,5 +720,4 @@ footer a:hover {
   .header {
   height: 100px;
   }
->>>>>>> 50579c46f91d07511e820cb0b19c54af275ad638
 }
